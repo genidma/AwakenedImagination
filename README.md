@@ -1,2 +1,1 @@
-# AwakeSpaceIndustries-Test
-A repository for the Awake Space Industries website
+This repository is empty. Any task executed on it should be considered a new capability and needs to be created.
