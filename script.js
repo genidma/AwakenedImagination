@@ -55,14 +55,6 @@ function makeSunWobble() {
 
 makeSunWobble();
 
-function playChopin() {
-    const audio = new Audio('chopin.mp3');
-    audio.controls = true;
-    document.body.appendChild(audio);
-}
-
-playChopin();
-
 const tasks = {
     data: [
         {id: 1, text: "Task 1", start_date: "01-01-2025", duration: 15},
