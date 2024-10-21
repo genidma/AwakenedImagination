@@ -117,12 +117,33 @@ nav ul li a:hover {
     width: 20px;
     height: 20px;
     background-color: black;
-    border-radius: 50%;
     position: absolute;
     animation: fly 10s linear infinite;
 }
 
+.bird::before, .bird::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 5px 0 5px;
+    border-color: black transparent transparent transparent;
+}
+
+.bird::before {
+    transform: rotate(-45deg);
+    top: -10px;
+    left: -5px;
+}
+
+.bird::after {
+    transform: rotate(45deg);
+    top: -10px;
+    right: -5px;
+}
+
 @keyframes fly {
     0% { transform: translateX(0); }
-    100% { transform: translateX(100vw); }
+    100% { transform: translateX(-100vw); }
 }

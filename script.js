@@ -60,11 +60,7 @@ function createBirds() {
     const birdCount = 5;
     for (let i = 0; i < birdCount; i++) {
         const bird = document.createElement('div');
-        bird.style.width = '20px';
-        bird.style.height = '20px';
-        bird.style.backgroundColor = 'black';
-        bird.style.borderRadius = '50%';
-        bird.style.position = 'absolute';
+        bird.classList.add('bird');
         bird.style.top = `${Math.random() * 50}px`;
         bird.style.left = `${i * 30}px`;
         birds.appendChild(bird);
