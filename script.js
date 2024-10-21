@@ -87,3 +87,27 @@ function makeBirdsFly() {
 }
 
 makeBirdsFly();
+
+function createGanttChart() {
+    const ganttChart = document.getElementById('gantt-chart');
+    const tasks = [
+        { name: 'Task 1', start: '2023-04-01', end: '2023-05-01' },
+        { name: 'Task 2', start: '2023-05-02', end: '2023-06-01' },
+        { name: 'Task 3', start: '2023-06-02', end: '2023-07-01' },
+        { name: 'Task 4', start: '2023-07-02', end: '2023-08-01' },
+        { name: 'Task 5', start: '2023-08-02', end: '2023-09-01' },
+        { name: 'Task 6', start: '2023-09-02', end: '2023-10-01' }
+    ];
+
+    tasks.forEach(task => {
+        const taskElement = document.createElement('div');
+        taskElement.style.width = '100%';
+        taskElement.style.height = '20px';
+        taskElement.style.backgroundColor = 'blue';
+        taskElement.style.marginBottom = '5px';
+        taskElement.innerText = `${task.name}: ${task.start} - ${task.end}`;
+        ganttChart.appendChild(taskElement);
+    });
+}
+
+createGanttChart();
