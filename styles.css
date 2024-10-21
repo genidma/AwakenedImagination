@@ -1,16 +1,17 @@
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    background-color: #ffcc00;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 h1 {
-    font-size: 2em;
-    color: #333;
+    font-size: 2.5em;
+    color: #ff0066;
+    text-shadow: 2px 2px #ffcc00;
 }
 
 p {
-    font-size: 1em;
-    color: #666;
+    font-size: 1.2em;
+    color: #333;
 }
 
 section {
@@ -22,8 +23,9 @@ section {
 }
 
 h2 {
-    font-size: 1.5em;
-    color: #444;
+    font-size: 2em;
+    color: #ff0066;
+    text-shadow: 1px 1px #ffcc00;
 }
 
 ul {
@@ -33,10 +35,11 @@ ul {
 
 li {
     margin: 10px 0;
-    font-size: 1em;
-    color: #555;
+    font-size: 1.2em;
+    color: #333;
 }
 
 strong {
-    color: #333;
+    color: #ff0066;
+    text-shadow: 1px 1px #ffcc00;
 }
