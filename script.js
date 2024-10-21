@@ -79,7 +79,7 @@ function makeBirdsFly() {
     setInterval(() => {
         position += 1;
         for (let bird of birds) {
-            bird.style.left = `${parseInt(bird.style.left) + 1}px`;
+            bird.style.left = `${parseInt(bird.style.left) - 1}px`;
         }
         if (position > window.innerWidth) {
             position = 0;
