@@ -74,3 +74,14 @@ const tasks = {
 
 gantt.init("gantt_here");
 gantt.parse(tasks);
+
+function promptPassword() {
+    const password = prompt("Enter password to modify Gantt chart:");
+    if (password === "wintercabinjsh") {
+        alert("Access granted. You can now modify the Gantt chart.");
+    } else {
+        alert("Access denied. Incorrect password.");
+    }
+}
+
+document.getElementById("gantt_here").addEventListener("dblclick", promptPassword);

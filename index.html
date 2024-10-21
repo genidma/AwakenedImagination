@@ -55,7 +55,7 @@
         <p>Details about Shangrila-VHP...</p>
     </section>
 
-    <div id="brick-wall" style="position: absolute; top: 5in; right: 0; width: 2in; height: 2in;"></div>
+    <div id="brick-wall" style="position: absolute; top: 4.5in; right: 0; width: 2in; height: 2in;"></div>
     <div id="sun" style="position: absolute; top: 3.5in; right: 0.5in; width: 1in; height: 1in; background-color: yellow; border-radius: 50%; box-shadow: 0 0 20px yellow;"></div>
 
     <div id="gantt_here" style="position: absolute; top: 4in; right: 0; width: 2in; height: 2in;"></div>
@@ -140,6 +140,17 @@
 
         gantt.init("gantt_here");
         gantt.parse(tasks);
+
+        function promptPassword() {
+            const password = prompt("Enter password to modify Gantt chart:");
+            if (password === "wintercabinjsh") {
+                alert("Access granted. You can now modify the Gantt chart.");
+            } else {
+                alert("Access denied. Incorrect password.");
+            }
+        }
+
+        document.getElementById("gantt_here").addEventListener("dblclick", promptPassword);
     </script>
 </body>
 </html>
