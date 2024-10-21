@@ -54,3 +54,40 @@ function makeSunWobble() {
 }
 
 makeSunWobble();
+
+function createBirds() {
+    const birds = document.getElementById('birds');
+    const birdCount = 5;
+    for (let i = 0; i < birdCount; i++) {
+        const bird = document.createElement('div');
+        bird.style.width = '20px';
+        bird.style.height = '20px';
+        bird.style.backgroundColor = 'black';
+        bird.style.borderRadius = '50%';
+        bird.style.position = 'absolute';
+        bird.style.top = `${Math.random() * 50}px`;
+        bird.style.left = `${i * 30}px`;
+        birds.appendChild(bird);
+    }
+}
+
+createBirds();
+
+function makeBirdsFly() {
+    const birds = document.getElementById('birds').children;
+    let position = 0;
+    setInterval(() => {
+        position += 1;
+        for (let bird of birds) {
+            bird.style.left = `${parseInt(bird.style.left) + 1}px`;
+        }
+        if (position > window.innerWidth) {
+            position = 0;
+            for (let bird of birds) {
+                bird.style.left = `${Math.random() * 50}px`;
+            }
+        }
+    }, 50);
+}
+
+makeBirdsFly();
