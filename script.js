@@ -63,48 +63,14 @@ function playChopin() {
 
 playChopin();
 
-const ctx = document.getElementById('ganttChart').getContext('2d');
-const data = {
-    labels: ['Task 1', 'Task 2', 'Task 3', 'Task 4'],
-    datasets: [{
-        label: 'Project Timeline',
-        data: [ 
-            {x: '2025-01-01', y: 'Task 1', x2: '2025-01-15'}, 
-            {x: '2025-01-15', y: 'Task 2', x2: '2025-02-01'}, 
-            {x: '2025-02-15', y: 'Task 3', x2: '2025-03-15'}, 
-            {x: '2025-04-01', y: 'Task 4', x2: '2025-05-01'} 
-        ],
-        backgroundColor: 'rgba(75, 192, 192, 0.5)',
-        borderColor: 'rgba(75, 192, 192, 1)',
-        borderWidth: 1
-    }]
+const tasks = {
+    data: [
+        {id: 1, text: "Task 1", start_date: "01-01-2025", duration: 15},
+        {id: 2, text: "Task 2", start_date: "15-01-2025", duration: 17},
+        {id: 3, text: "Task 3", start_date: "15-02-2025", duration: 28},
+        {id: 4, text: "Task 4", start_date: "01-04-2025", duration: 30}
+    ]
 };
 
-const options = {
-    scales: {
-        x: {
-            type: 'time',
-            time: {
-                unit: 'day',
-                tooltipFormat: 'MM/DD/YYYY'
-            },
-            title: {
-                display: true,
-                text: 'Date'
-            }
-        },
-        y: {
-            type: 'category',
-            title: {
-                display: true,
-                text: 'Tasks'
-            }
-        }
-    }
-};
-
-new Chart(ctx, {
-    type: 'bar',
-    data: data,
-    options: options
-});
+gantt.init("gantt_here");
+gantt.parse(tasks);
