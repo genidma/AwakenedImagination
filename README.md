@@ -1,17 +1,29 @@
-# Awake Space Industries Website Project
+# Awake Space Industries and Universal Healthcare Website Project
 
-This project is a simple website that includes basic HTML, CSS, and JavaScript files.
+This project is a simple website that includes basic HTML, CSS, and JavaScript files. The content from both Awake Space Industries (ASI) and Awake Universal Healthcare (AUH) has been synthesized into a single page.
 
 ## Files
 
-- `index.html`: The main HTML file that contains the structure of the website.
-- `styles.css`: The CSS file that contains the styles for the website.
+- `index.html`: The main HTML file that contains the structure of the website, including a unified introduction, separate sections for key areas of focus, and roles and responsibilities from the AUH website.
+- `styles.css`: The CSS file that contains the styles for the website, ensuring a cohesive look and feel across all sections.
 - `script.js`: The JavaScript file that contains the functionality for the website.
 
 ## How to Run the Project Locally
 
 1. Clone the repository to your local machine.
 2. Open the `index.html` file in your web browser.
-3. You should see the "Welcome to Awake Space Industries" message displayed on the page.
+3. You should see the "Welcome to Awake Space Industries and Universal Healthcare" message displayed on the page.
 4. Open the browser console to see the "Hello, World!" message logged by the JavaScript file.
 5. Click the button (if any) to see the alert message "Hello, World!".
+
+## AUH Content
+
+The AUH content outlines various roles and responsibilities for positions within an organization focused on healthcare, artificial intelligence, and global communications. Key roles include:
+
+- Lead Ethicist: Develop policies and frameworks, focusing on the Outer Space Treaty and maintaining hygiene across the solar system.
+- Lead General Practitioner: Enable a global healthcare plan, requiring an MD degree and 2-4 years of practice, with a focus on automating functions safely.
+- Director of Artificial Intelligence: Keep the company updated on machine learning and deep learning in healthcare, develop ML and DL models, and anticipate key AI breakthroughs.
+- Program Manager - Children's Well-being: Develop a program manager role to work with Sesame Workshop and Khan Academy to scale operations globally.
+- Global Communications Lead: Develop policies and frameworks, maintain clear communication with global stakeholders, and conduct scenario-specific exercises.
+- Lead Solutions Developer for Indigenous Affairs: Work with the Communications Lead for Indigenous Affairs to initiate networks and processes to improve the quality of life for indigenous communities.
+- Blockchain Developer and Database Architect: Develop architecture to protect patient privacy, ensure data accessibility, and stay updated on blockchain and AI advancements.
