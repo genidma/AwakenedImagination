@@ -76,3 +76,11 @@ function createGanttChart() {
 }
 
 createGanttChart();
+
+function playChopin() {
+    const audio = new Audio('chopin.mp3');
+    audio.controls = true;
+    document.body.appendChild(audio);
+}
+
+playChopin();
