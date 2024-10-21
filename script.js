@@ -55,28 +55,6 @@ function makeSunWobble() {
 
 makeSunWobble();
 
-function createGanttChart() {
-    const ganttChart = document.getElementById('gantt-chart');
-    const tasks = [
-        { name: 'Task 1', start: '2025-01-01', end: '2025-02-01' },
-        { name: 'Task 2', start: '2025-02-15', end: '2025-03-15' },
-        { name: 'Task 3', start: '2025-03-01', end: '2025-04-01' },
-        { name: 'Task 4', start: '2025-04-15', end: '2025-05-15' }
-    ];
-
-    tasks.forEach(task => {
-        const taskElement = document.createElement('div');
-        taskElement.style.width = '100%';
-        taskElement.style.height = '20px';
-        taskElement.style.backgroundColor = 'blue';
-        taskElement.style.marginBottom = '5px';
-        taskElement.innerText = `${task.name}: ${task.start} - ${task.end}`;
-        ganttChart.appendChild(taskElement);
-    });
-}
-
-createGanttChart();
-
 function playChopin() {
     const audio = new Audio('chopin.mp3');
     audio.controls = true;
