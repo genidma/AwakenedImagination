@@ -93,7 +93,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Add styles for the sun and birds animations */
+/* Add styles for the sun animation */
 #sun {
     position: absolute;
     top: 3.5in;
@@ -103,49 +103,6 @@ nav ul li a:hover {
     background-color: yellow;
     border-radius: 50%;
     box-shadow: 0 0 20px yellow;
-}
-
-#birds {
-    position: absolute;
-    top: 3.5in;
-    right: 0.5in;
-    width: 1in;
-    height: 1in;
-}
-
-.bird {
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    position: absolute;
-    animation: fly 10s linear infinite;
-}
-
-.bird::before, .bird::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 5px 0 5px;
-    border-color: black transparent transparent transparent;
-}
-
-.bird::before {
-    transform: rotate(-45deg);
-    top: -10px;
-    left: -5px;
-}
-
-.bird::after {
-    transform: rotate(45deg);
-    top: -10px;
-    right: -5px;
-}
-
-@keyframes fly {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100vw); }
 }
 
 /* Add media queries to make the site responsive */

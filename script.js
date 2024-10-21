@@ -55,48 +55,13 @@ function makeSunWobble() {
 
 makeSunWobble();
 
-function createBirds() {
-    const birds = document.getElementById('birds');
-    const birdCount = 5;
-    for (let i = 0; i < birdCount; i++) {
-        const bird = document.createElement('div');
-        bird.classList.add('bird');
-        bird.style.top = `${Math.random() * 50}px`;
-        bird.style.left = `${i * 30}px`;
-        birds.appendChild(bird);
-    }
-}
-
-createBirds();
-
-function makeBirdsFly() {
-    const birds = document.getElementById('birds').children;
-    let position = 0;
-    setInterval(() => {
-        position += 1;
-        for (let bird of birds) {
-            bird.style.left = `${parseInt(bird.style.left) - 1}px`;
-        }
-        if (position > window.innerWidth) {
-            position = 0;
-            for (let bird of birds) {
-                bird.style.left = `${Math.random() * 50}px`;
-            }
-        }
-    }, 50);
-}
-
-makeBirdsFly();
-
 function createGanttChart() {
     const ganttChart = document.getElementById('gantt-chart');
     const tasks = [
         { name: 'Task 1', start: '2025-01-01', end: '2025-02-01' },
         { name: 'Task 2', start: '2025-02-15', end: '2025-03-15' },
         { name: 'Task 3', start: '2025-03-01', end: '2025-04-01' },
-        { name: 'Task 4', start: '2025-04-15', end: '2025-05-15' },
-        { name: 'Task 5', start: '2025-05-01', end: '2025-06-01' },
-        { name: 'Task 6', start: '2025-06-15', end: '2025-07-15' }
+        { name: 'Task 4', start: '2025-04-15', end: '2025-05-15' }
     ];
 
     tasks.forEach(task => {
