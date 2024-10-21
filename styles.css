@@ -147,3 +147,30 @@ nav ul li a:hover {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100vw); }
 }
+
+/* Add media queries to make the site responsive */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, li {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
