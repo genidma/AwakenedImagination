@@ -29,3 +29,17 @@ function createBrickWall() {
 }
 
 createBrickWall();
+
+function createSun() {
+    const sun = document.getElementById('sun');
+    sun.style.position = 'absolute';
+    sun.style.top = '3.5in';
+    sun.style.right = '0.5in';
+    sun.style.width = '1in';
+    sun.style.height = '1in';
+    sun.style.backgroundColor = 'yellow';
+    sun.style.borderRadius = '50%';
+    sun.style.boxShadow = '0 0 20px yellow';
+}
+
+createSun();
