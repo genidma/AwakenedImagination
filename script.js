@@ -91,12 +91,12 @@ makeBirdsFly();
 function createGanttChart() {
     const ganttChart = document.getElementById('gantt-chart');
     const tasks = [
-        { name: 'Task 1', start: '2023-04-01', end: '2023-05-01' },
-        { name: 'Task 2', start: '2023-05-02', end: '2023-06-01' },
-        { name: 'Task 3', start: '2023-06-02', end: '2023-07-01' },
-        { name: 'Task 4', start: '2023-07-02', end: '2023-08-01' },
-        { name: 'Task 5', start: '2023-08-02', end: '2023-09-01' },
-        { name: 'Task 6', start: '2023-09-02', end: '2023-10-01' }
+        { name: 'Task 1', start: '2025-01-01', end: '2025-02-01' },
+        { name: 'Task 2', start: '2025-02-15', end: '2025-03-15' },
+        { name: 'Task 3', start: '2025-03-01', end: '2025-04-01' },
+        { name: 'Task 4', start: '2025-04-15', end: '2025-05-15' },
+        { name: 'Task 5', start: '2025-05-01', end: '2025-06-01' },
+        { name: 'Task 6', start: '2025-06-15', end: '2025-07-15' }
     ];
 
     tasks.forEach(task => {
