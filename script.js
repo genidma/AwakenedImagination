@@ -43,3 +43,14 @@ function createSun() {
 }
 
 createSun();
+
+function makeSunWobble() {
+    const sun = document.getElementById('sun');
+    let angle = 0;
+    setInterval(() => {
+        angle += 0.1;
+        sun.style.transform = `translateY(${Math.sin(angle) * 5}px)`;
+    }, 100);
+}
+
+makeSunWobble();
