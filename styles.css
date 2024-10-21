@@ -59,3 +59,36 @@ strong {
 h1, h2, p, li, strong {
     animation: rainbow 5s infinite;
 }
+
+/* Add styles for the new sections */
+#healthcare-infrastructure, #aerospace-sector, #artificial-intelligence, #global-communications, #indigenous-affairs, #roles-responsibilities {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Add styles for the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff0066;
+    border-radius: 5px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
