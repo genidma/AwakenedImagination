@@ -51,3 +51,17 @@ function promptPassword() {
 }
 
 document.getElementById("gantt_here").addEventListener("dblclick", promptPassword);
+
+function createBrickWall() {
+    const wall = document.getElementById('brick-wall');
+    wall.style.position = 'absolute';
+    wall.style.top = '5in';
+    wall.style.right = '0.5in';
+    wall.style.width = '2in';
+    wall.style.height = '2in';
+    wall.style.backgroundColor = '#8B4513';
+    wall.style.border = '1px solid #5A2D0C';
+    wall.style.zIndex = '1'; // Ensure the wall is behind the sun
+}
+
+createBrickWall();
