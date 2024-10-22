@@ -65,3 +65,55 @@ function createBrickWall() {
 }
 
 createBrickWall();
+
+function create3DSolarSystem() {
+    const canvas = document.getElementById('solarSystemCanvas');
+    const ctx = canvas.getContext('2d');
+
+    const sun = {
+        x: canvas.width / 2,
+        y: canvas.height / 2,
+        radius: 50,
+        color: 'yellow'
+    };
+
+    const planets = [
+        { radius: 10, distance: 100, speed: 0.02, angle: 0, color: 'gray' },
+        { radius: 15, distance: 150, speed: 0.015, angle: 0, color: 'orange' },
+        { radius: 20, distance: 200, speed: 0.01, angle: 0, color: 'blue' },
+        { radius: 25, distance: 250, speed: 0.005, angle: 0, color: 'red' }
+    ];
+
+    function drawSun() {
+        ctx.beginPath();
+        ctx.arc(sun.x, sun.y, sun.radius, 0, Math.PI * 2);
+        ctx.fillStyle = sun.color;
+        ctx.fill();
+        ctx.closePath();
+    }
+
+    function drawPlanets() {
+        planets.forEach(planet => {
+            planet.angle += planet.speed;
+            const x = sun.x + planet.distance * Math.cos(planet.angle);
+            const y = sun.y + planet.distance * Math.sin(planet.angle);
+
+            ctx.beginPath();
+            ctx.arc(x, y, planet.radius, 0, Math.PI * 2);
+            ctx.fillStyle = planet.color;
+            ctx.fill();
+            ctx.closePath();
+        });
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawSun();
+        drawPlanets();
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+}
+
+create3DSolarSystem();
