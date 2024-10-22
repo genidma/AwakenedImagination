@@ -4,61 +4,6 @@ function showAlert() {
     alert("Hello, World!");
 }
 
-function createTinyHouse() {
-    const tinyHouse = document.getElementById('tiny-house');
-    const houseWidth = 2 * 96; // 2 inches in pixels
-    const houseHeight = 2 * 96; // 2 inches in pixels
-    const roofHeight = houseHeight / 2;
-    const bodyHeight = houseHeight / 2;
-
-    // Create roof
-    const roof = document.createElement('div');
-    roof.style.width = `${houseWidth}px`;
-    roof.style.height = `${roofHeight}px`;
-    roof.style.backgroundColor = 'brown';
-    roof.style.position = 'relative';
-
-    const roofTriangle = document.createElement('div');
-    roofTriangle.style.width = '50%';
-    roofTriangle.style.height = '100%';
-    roofTriangle.style.backgroundColor = 'darkred';
-    roofTriangle.style.position = 'absolute';
-    roofTriangle.style.top = '0';
-    roofTriangle.style.left = '25%';
-
-    roof.appendChild(roofTriangle);
-    tinyHouse.appendChild(roof);
-
-    // Create body
-    const body = document.createElement('div');
-    body.style.width = `${houseWidth}px`;
-    body.style.height = `${bodyHeight}px`;
-    body.style.backgroundColor = 'lightgray';
-    body.style.position = 'relative';
-
-    const windowLeft = document.createElement('div');
-    windowLeft.style.width = '20%';
-    windowLeft.style.height = '50%';
-    windowLeft.style.backgroundColor = 'white';
-    windowLeft.style.position = 'absolute';
-    windowLeft.style.bottom = '0';
-    windowLeft.style.left = '10%';
-
-    const windowRight = document.createElement('div');
-    windowRight.style.width = '20%';
-    windowRight.style.height = '50%';
-    windowRight.style.backgroundColor = 'white';
-    windowRight.style.position = 'absolute';
-    windowRight.style.bottom = '0';
-    windowRight.style.right = '10%';
-
-    body.appendChild(windowLeft);
-    body.appendChild(windowRight);
-    tinyHouse.appendChild(body);
-}
-
-createTinyHouse();
-
 function createSun() {
     const sun = document.getElementById('sun');
     sun.style.position = 'absolute';

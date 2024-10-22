@@ -176,56 +176,6 @@ nav select option {
     color: #333;
 }
 
-/* Add styles for the tiny-house */
-#tiny-house {
-    position: absolute;
-    top: 3in;
-    right: 0;
-    width: 2in;
-    height: 2in;
-}
-
-#tiny-house div {
-    position: relative;
-}
-
-#tiny-house .roof {
-    width: 100%;
-    height: 50%;
-    background-color: brown;
-}
-
-#tiny-house .roof .triangle {
-    width: 50%;
-    height: 100%;
-    background-color: darkred;
-    position: absolute;
-    top: 0;
-    left: 25%;
-}
-
-#tiny-house .body {
-    width: 100%;
-    height: 50%;
-    background-color: lightgray;
-}
-
-#tiny-house .body .window {
-    width: 20%;
-    height: 50%;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-}
-
-#tiny-house .body .window.left {
-    left: 10%;
-}
-
-#tiny-house .body .window.right {
-    right: 10%;
-}
-
 /* Add styles for the floating lotus flower */
 #floating-lotus {
     position: relative;
@@ -242,4 +192,15 @@ footer {
     background-color: #ff0066;
     color: #fff;
     border-radius: 5px;
+}
+
+/* Add styles for the reddish brown brick wall */
+#brick-wall {
+    position: absolute;
+    top: 5in;
+    right: 0.5in;
+    width: 2in;
+    height: 2in;
+    background-color: #8B4513;
+    border: 1px solid #5A2D0C;
 }
