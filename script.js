@@ -106,16 +106,3 @@ function promptPassword() {
 }
 
 document.getElementById("gantt_here").addEventListener("dblclick", promptPassword);
-
-function createTinyPool() {
-    const tinyPool = document.getElementById('tiny-pool');
-    tinyPool.style.position = 'absolute';
-    tinyPool.style.top = '4.5in';
-    tinyPool.style.right = '0.5in';
-    tinyPool.style.width = '1in';
-    tinyPool.style.height = '0.5in';
-    tinyPool.style.backgroundColor = 'blue';
-    tinyPool.style.borderRadius = '50%';
-}
-
-createTinyPool();
