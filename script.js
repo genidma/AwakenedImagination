@@ -117,3 +117,10 @@ function create3DSolarSystem() {
 }
 
 create3DSolarSystem();
+
+function moveSolarSystemUp() {
+    const canvas = document.getElementById('solarSystemCanvas');
+    canvas.style.top = 'calc(100px - 2.5in)';
+}
+
+moveSolarSystemUp();
