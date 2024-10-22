@@ -128,3 +128,16 @@ moveSolarSystemUp();
 document.querySelector('nav select').addEventListener('change', function() {
     window.location.href = this.value;
 });
+
+function addFloatingLotus() {
+    const lotus = document.createElement('div');
+    lotus.id = 'floating-lotus';
+    lotus.style.position = 'relative';
+    lotus.style.width = '100%';
+    lotus.style.height = '200px';
+    lotus.style.background = 'url("https://example.com/lotus-flower.png") no-repeat center center';
+    lotus.style.backgroundSize = 'contain';
+    document.getElementById('contact-form').insertAdjacentElement('afterend', lotus);
+}
+
+addFloatingLotus();
