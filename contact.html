@@ -13,7 +13,7 @@
     </nav>
 
     <h1>Contact Us</h1>
-    <form>
+    <form id="contact-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
         <label for="email">Email:</label>
@@ -28,5 +28,33 @@
     <footer>
         <p>Copyright 'Awake Aerospace, Universal Healthcare & Shangrila Veterans Healing Places (VHP)'</p>
     </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            fetch('https://example.com/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    message: message
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Email sent successfully!');
+            })
+            .catch(error => {
+                alert('Error sending email.');
+            });
+        });
+    </script>
 </body>
 </html>
