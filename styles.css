@@ -204,3 +204,11 @@ footer {
     background-color: #8B4513;
     border: 1px solid #5A2D0C;
 }
+
+/* Add styles for the solar system animation */
+#solarSystemCanvas {
+    position: absolute;
+    right: 0;
+    width: 800px;
+    height: 800px;
+}
