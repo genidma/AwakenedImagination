@@ -152,9 +152,6 @@ function addPages() {
                 <title>New Page ${i}</title>
             </head>
             <body>
-                <nav>
-                    <a href="index.html">Home</a>
-                </nav>
                 <h1>New Page ${i}</h1>
                 <p>This is the content of new page ${i}.</p>
             </body>
