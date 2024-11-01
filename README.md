@@ -1,6 +1,6 @@
-# Awake Space Industries and Universal Healthcare Website Project
+# Project Awakened Imagination
 
-This project is a simple website that includes basic HTML, CSS, and JavaScript files. The content from both Awake Space Industries (ASI) and Awake Universal Healthcare (AUH) has been synthesized into a single page.
+This project is a simple website that includes basic HTML, CSS, and JavaScript files. Historically, there have been two projects via the Awake Space Industries Project (Not incorporated as of October of 2024) and Awake Universal Healthcare (Same). These projects are being consolidated as of 11-01-2024
 
 ## Files
 
