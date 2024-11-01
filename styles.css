@@ -37,3 +37,13 @@ nav ul li a:hover {
 .subtle-pink-background {
     background-color: #ffe6e6;
 }
+
+/* Horizontal bar at the bottom of the contact page */
+.horizontal-bar {
+    width: 50%;
+    height: 5px;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    left: 25%;
+}
