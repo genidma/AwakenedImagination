@@ -1,6 +1,6 @@
-# Awake Space Industries and Universal Healthcare Website Project
+# AwakeSpaceIndustries-Test and Universal Healthcare Website Project
 
-This project is a simple website that includes basic HTML, CSS, and JavaScript files. The content from both Awake Space Industries (ASI) and Awake Universal Healthcare (AUH) has been synthesized into a single page.
+This project is a simple website that includes basic HTML, CSS, and JavaScript files. The content from both AwakeSpaceIndustries-Test (ASI) and Awake Universal Healthcare (AUH) has been synthesized into a single page.
 
 ## Files
 
@@ -12,7 +12,7 @@ This project is a simple website that includes basic HTML, CSS, and JavaScript f
 
 1. Clone the repository to your local machine.
 2. Open the `index.html` file in your web browser.
-3. You should see the "Welcome to Awake Space Industries and Universal Healthcare" message displayed on the page.
+3. You should see the "Welcome to AwakeSpaceIndustries-Test and Universal Healthcare" message displayed on the page.
 4. Open the browser console to see the "Hello, World!" message logged by the JavaScript file.
 5. Click the button (if any) to see the alert message "Hello, World!".
 
