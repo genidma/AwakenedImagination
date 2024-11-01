@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awake Space Industries</title>
@@ -41,5 +42,117 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <title>Awakened Imagination Group of Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.js"></script>
+    <link rel="stylesheet" href="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.css">
+</head>
+<body>
+    <nav style="position: absolute; top: 0; right: 0;">
+        <select onchange="location = this.value;">
+            <option value="index.html">Home</option>
+            <option value="effort.html">Effort</option>
+            <option value="contact.html">Contact</option>
+        </select>
+    </nav>
+
+    <h1>Welcome to Awakened Imagination Group of Projects</h1>
+    <p>Awake Group of Projects, is dedicated towards pioneering and helping enable a secure, safe, sustainable & equitable space infrastructure. By establishing this foundation, we aim to create a future of abundance that can drive significant funding towards global healthcare. Thus helping more individuals to help make the conditions better on and off the planet.</p>
+
+    <p><section>It is to note that 'Awakened Imagination' is typically associated with Neville Goddard. As well, as of right now there the Legal structure, including patents, trademarks and copyrights are currently in the works. So the name of this project is mostly likely going to change and feedback is very welcome!</section>
+    
+    <section id="healthcare-infrastructure">
+        <h2>Healthcare Infrastructure</h2>
+        <p>Details about the healthcare infrastructure...</p>
+    </section>
+    
+    <section id="aerospace-sector">
+        <h2>Aerospace Sector</h2>
+        <p>Details about the aerospace sector...</p>
+    </section>
+    
+    <section id="artificial-intelligence">
+        <h2>Artificial Intelligence</h2>
+        <p>Details about artificial intelligence...</p>
+    </section>
+    
+    <section id="global-communications">
+        <h2>Global Communications</h2>
+        <p>Details about global communications...</p>
+    </section>
+    
+    <section id="indigenous-affairs">
+        <h2>Indigenous Affairs</h2>
+        <p>Details about indigenous affairs...</p>
+    </section>
+    
+    <section id="roles-responsibilities">
+        <h2>Roles and Responsibilities</h2>
+        <ul>
+            <li><strong>Lead Ethicist:</strong> Develop policies and frameworks, focusing on the Outer Space Treaty and maintaining hygiene across the solar system.</li>
+            <li><strong>Lead General Practitioner:</strong> Enable a global healthcare plan, requiring an MD degree and 2-4 years of practice, with a focus on automating functions safely.</li>
+            <li><strong>Director of Artificial Intelligence:</strong> Keep the company updated on machine learning and deep learning in healthcare, develop ML and DL models, and anticipate key AI breakthroughs.</li>
+            <li><strong>Program Manager - Children's Well-being:</strong> Develop a program manager role to work with Sesame Workshop and Khan Academy to scale operations globally.</li>
+            <li><strong>Global Communications Lead:</strong> Develop policies and frameworks, maintain clear communication with global stakeholders, and conduct scenario-specific exercises.</li>
+            <li><strong>Lead Solutions Developer for Indigenous Affairs:</strong> Work with the Communications Lead for Indigenous Affairs to initiate networks and processes to improve the quality of life for indigenous communities.</li>
+            <li><strong>Blockchain Developer and Database Architect:</strong> Develop architecture to protect patient privacy, ensure data accessibility, and stay updated on blockchain and AI advancements.</li>
+        </ul>
+    </section>
+
+    <section id="shangrila-vhp">
+        <h2>Shangrila-VHP</h2>
+        <p>Details about Shangrila-VHP will be added shortly. This is a demo page only. Thank you.</p>
+    </section>
+
+    <div id="sun" style="position: absolute; top: 3.5in; right: 0.5in; width: 1in; height: 1in; background-color: yellow; border-radius: 50%; box-shadow: 0 0 20px yellow;"></div>
+
+    <div id="brick-wall" style="position: absolute; top: 5in; right: 0.5in; width: 2in; height: 2in; background-color: #8B4513; border: 1px solid #5A2D0C;"></div>
+
+    <div id="puppy" style="position: absolute; top: 6in; right: 0.5in; width: 2in; height: 2in; background: url('https://example.com/puppy.png') no-repeat center center; background-size: contain;"></div>
+
+    <button id="add-pages-btn">Add Pages</button>
+    <button id="delete-pages-btn">Delete Pages</button>
+
+    <footer>
+        <p>Copyright 'Awakened Imagination Group of Projects'</p>
+    </footer>
+
+    <script>
+        function createSun() {
+            const sun = document.getElementById('sun');
+            sun.style.position = 'absolute';
+            sun.style.top = '3.5in';
+            sun.style.right = '0.5in';
+            sun.style.width = '1in';
+            sun.style.height = '1in';
+            sun.style.backgroundColor = 'yellow';
+            sun.style.borderRadius = '50%';
+            sun.style.boxShadow = '0 0 20px yellow';
+        }
+
+        createSun();
+
+        function makeSunWobble() {
+            const sun = document.getElementById('sun');
+            let angle = 0;
+            setInterval(() => {
+                angle += 0.1;
+                sun.style.transform = `translateY(${Math.sin(angle) * 5}px)`;
+            }, 100);
+        }
+
+        makeSunWobble();
+
+        document.getElementById('add-pages-btn').addEventListener('click', function() {
+            addPages();
+        });
+
+        document.getElementById('delete-pages-btn').addEventListener('click', function() {
+            deletePages();
+        });
+    </script>
+
 </body>
 </html>
