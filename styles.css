@@ -32,3 +32,8 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+/* Subtle pink background for contact page */
+.subtle-pink-background {
+    background-color: #ffe6e6;
+}
