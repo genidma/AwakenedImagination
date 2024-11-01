@@ -1,6 +1,6 @@
 body {
-    background-color: magenta;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -17,7 +17,7 @@ p {
 section {
     margin: 20px 0;
     padding: 10px;
-    background-color: #fff;
+    background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -44,27 +44,11 @@ strong {
     text-shadow: 1px 1px #ffcc00;
 }
 
-/* Add CSS-based GIFs */
-@keyframes rainbow {
-    0% { color: red; }
-    14% { color: orange; }
-    28% { color: yellow; }
-    42% { color: green; }
-    57% { color: blue; }
-    71% { color: indigo; }
-    85% { color: violet; }
-    100% { color: red; }
-}
-
-h1, h2, p, li, strong {
-    animation: rainbow 5s infinite;
-}
-
 /* Add styles for the new sections */
 #healthcare-infrastructure, #aerospace-sector, #artificial-intelligence, #global-communications, #indigenous-affairs, #roles-responsibilities {
     margin: 20px 0;
     padding: 10px;
-    background-color: #fff;
+    background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -84,7 +68,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -100,9 +84,9 @@ nav ul li a:hover {
     right: 0.5in;
     width: 1in;
     height: 1in;
-    background-color: yellow;
+    background-color: #ffcc00;
     border-radius: 50%;
-    box-shadow: 0 0 20px yellow;
+    box-shadow: 0 0 20px #ffcc00;
 }
 
 /* Add media queries to make the site responsive */
