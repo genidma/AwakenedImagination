@@ -185,8 +185,10 @@ footer {
     right: 0.5in;
     width: 2in;
     height: 2in;
-    background-color: #B22222;
-    border: 1px solid #5A2D0C;
+    background-color: #874848;
+    border: 1px solid #d36516;
+    background-image: linear-gradient(45deg, #B22222 25%, transparent 25%, transparent 50%, #B22222 50%, #B22222 75%, transparent 75%, transparent);
+    background-size: 20px 20px;
 }
 
 /* Add styles for the solar system animation */

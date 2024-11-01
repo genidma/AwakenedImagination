@@ -197,3 +197,38 @@ function updateNavigationMenu() {
 
 document.getElementById('add-pages-btn').addEventListener('click', addPages);
 document.getElementById('delete-pages-btn').addEventListener('click', deletePages);
+
+// Function to stack bricks in animation to make it seem like the wall is being built
+function stackBricks() {
+    const wall = document.getElementById('brick-wall');
+    wall.innerHTML = ''; // Clear any existing bricks
+
+    const brickWidth = 20;
+    const brickHeight = 10;
+    const wallWidth = wall.clientWidth;
+    const wallHeight = wall.clientHeight;
+    const bricksPerRow = Math.floor(wallWidth / brickWidth);
+    const rows = Math.floor(wallHeight / brickHeight);
+
+    for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < bricksPerRow; col++) {
+            const brick = document.createElement('div');
+            brick.style.width = `${brickWidth}px`;
+            brick.style.height = `${brickHeight}px`;
+            brick.style.backgroundColor = '#B22222';
+            brick.style.position = 'absolute';
+            brick.style.left = `${col * brickWidth}px`;
+            brick.style.top = `${row * brickHeight}px`;
+            brick.style.transition = 'top 0.5s ease-in-out';
+            wall.appendChild(brick);
+
+            // Delay the stacking of each brick to create the animation effect
+            setTimeout(() => {
+                brick.style.top = `${row * brickHeight}px`;
+            }, row * 100 + col * 50);
+        }
+    }
+}
+
+// Call the function to start the brick stacking animation when the page loads
+document.addEventListener('DOMContentLoaded', stackBricks);
