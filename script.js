@@ -4,6 +4,18 @@ function showAlert() {
     alert("Hello, World!");
 }
 
+// Functionality for the navigation menu
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll("nav ul li a");
+    navLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            const target = event.target.getAttribute("href");
+            window.location.href = target;
+        });
+    });
+});
+
 function createSun() {
     const sun = document.getElementById('sun');
     sun.style.position = 'absolute';
@@ -189,3 +201,4 @@ function updateNavigationMenu() {
 
 document.getElementById('add-pages-btn').addEventListener('click', addPages);
 document.getElementById('delete-pages-btn').addEventListener('click', deletePages);
+

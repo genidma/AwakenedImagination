@@ -17,6 +17,7 @@ As of 11-01-2024 (November the 1st) the public facing websites will remain at th
 - `index.html`: The main HTML file that contains the structure of the website, including a unified introduction, separate sections for key areas of focus, and roles and responsibilities from the AUH website.
 - `styles.css`: The CSS file that contains the styles for the website, ensuring a cohesive look and feel across all sections.
 - `script.js`: The JavaScript file that contains the functionality for the website.
+- `contact.html`: The contact page that allows users to reach out to us.
 
 ## How to Run the Project Locally
 
@@ -25,6 +26,11 @@ As of 11-01-2024 (November the 1st) the public facing websites will remain at th
 3. You should see the "Welcome to AwakeSpaceIndustries-Test and Universal Healthcare" message displayed on the page.
 4. Open the browser console to see the "Hello, World!" message logged by the JavaScript file.
 5. Click the button (if any) to see the alert message "Hello, World!".
+6. Visit the contact page by clicking the "Contact" link in the navigation menu.
+7. Support our mission by making a donation through the "Donate" button on the homepage.
+8. The contact page includes a form with input fields for name, email, and message, and a submit button.
+9. The contact page also includes a horizontal bar at the bottom of the page.
+
 
 ## AUH Content
 
@@ -47,3 +53,4 @@ The Shangrila-VHP content outlines various initiatives and projects focused on i
 - Education and Awareness: Promote education and awareness about health and well-being through workshops, seminars, and online resources.
 - Collaboration with Local Organizations: Partner with local organizations to enhance the reach and impact of health initiatives.
 - Research and Development: Conduct research and development to identify innovative solutions for improving health outcomes for vulnerable populations.
+
