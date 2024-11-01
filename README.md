@@ -18,3 +18,5 @@ This project is a simple website that includes basic HTML, CSS, and JavaScript f
 5. Click the button (if any) to see the alert message "Hello, World!".
 6. Visit the contact page by clicking the "Contact" link in the navigation menu.
 7. Support our mission by making a donation through the "Donate" button on the homepage.
+8. The contact page includes a form with input fields for name, email, and message, and a submit button.
+9. The contact page also includes a horizontal bar at the bottom of the page.
