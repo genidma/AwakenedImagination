@@ -141,3 +141,54 @@ function addFloatingLotus() {
 }
 
 addFloatingLotus();
+
+function addPages() {
+    for (let i = 1; i <= 10; i++) {
+        const pageName = `new-page${i}.html`;
+        const pageContent = `
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>New Page ${i}</title>
+            </head>
+            <body>
+                <nav>
+                    <a href="index.html">Home</a>
+                </nav>
+                <h1>New Page ${i}</h1>
+                <p>This is the content of new page ${i}.</p>
+            </body>
+            </html>
+        `;
+        const blob = new Blob([pageContent], { type: 'text/html' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = pageName;
+        link.click();
+    }
+    updateNavigationMenu();
+}
+
+function deletePages() {
+    for (let i = 1; i <= 10; i++) {
+        const pageName = `new-page${i}.html`;
+        const link = document.createElement('a');
+        link.href = pageName;
+        link.download = pageName;
+        link.click();
+    }
+    updateNavigationMenu();
+}
+
+function updateNavigationMenu() {
+    const nav = document.querySelector('nav select');
+    for (let i = 1; i <= 10; i++) {
+        const option = document.createElement('option');
+        option.value = `new-page${i}.html`;
+        option.textContent = `New Page ${i}`;
+        nav.appendChild(option);
+    }
+}
+
+document.getElementById('add-pages-btn').addEventListener('click', addPages);
+document.getElementById('delete-pages-btn').addEventListener('click', deletePages);

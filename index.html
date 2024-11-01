@@ -13,6 +13,16 @@
             <option value="index.html">Home</option>
             <option value="effort.html">Effort</option>
             <option value="contact.html">Contact</option>
+            <option value="new-page1.html">New Page 1</option>
+            <option value="new-page2.html">New Page 2</option>
+            <option value="new-page3.html">New Page 3</option>
+            <option value="new-page4.html">New Page 4</option>
+            <option value="new-page5.html">New Page 5</option>
+            <option value="new-page6.html">New Page 6</option>
+            <option value="new-page7.html">New Page 7</option>
+            <option value="new-page8.html">New Page 8</option>
+            <option value="new-page9.html">New Page 9</option>
+            <option value="new-page10.html">New Page 10</option>
         </select>
     </nav>
 
@@ -67,6 +77,9 @@
 
     <div id="brick-wall" style="position: absolute; top: 5in; right: 0.5in; width: 2in; height: 2in; background-color: #8B4513; border: 1px solid #5A2D0C;"></div>
 
+    <button id="add-pages-btn">Add Pages</button>
+    <button id="delete-pages-btn">Delete Pages</button>
+
     <footer>
         <p>Copyright 'Awake Aerospace, Universal Healthcare & Shangrila Veterans Healing Places (VHP)'</p>
     </footer>
@@ -96,6 +109,14 @@
         }
 
         makeSunWobble();
+
+        document.getElementById('add-pages-btn').addEventListener('click', function() {
+            addPages();
+        });
+
+        document.getElementById('delete-pages-btn').addEventListener('click', function() {
+            deletePages();
+        });
     </script>
 </body>
 </html>
