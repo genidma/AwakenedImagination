@@ -1,3 +1,8 @@
+## AwakenedImagination
+# AwakeSpaceIndustries-Test and Universal Healthcare Website Project
+
+This project is a simple website that includes basic HTML, CSS, and JavaScript files. The content from both AwakeSpaceIndustries-Test (ASI) and Awake Universal Healthcare (AUH) has been synthesized into a single page.
+
 # Awakened Imagination Group of Projects
 
 This project is a simple website that includes basic HTML, CSS, and JavaScript files. Historically, there have been two projects via the Awake Space Industries Project (Not incorporated as of October of 2024) and Awake Universal Healthcare (Same). These projects are being consolidated as of 11-01-2024. 
@@ -5,6 +10,7 @@ This project is a simple website that includes basic HTML, CSS, and JavaScript f
 As of 11-01-2024 (November the 1st) the public facing websites will remain at the following locations
 - https://asi.surge.sh/
 - https://auh.surge.sh/
+
 
 ## Files
 
@@ -16,7 +22,7 @@ As of 11-01-2024 (November the 1st) the public facing websites will remain at th
 
 1. Clone the repository to your local machine.
 2. Open the `index.html` file in your web browser.
-3. You should see the "Welcome to Awake Space Industries and Universal Healthcare" message displayed on the page.
+3. You should see the "Welcome to AwakeSpaceIndustries-Test and Universal Healthcare" message displayed on the page.
 4. Open the browser console to see the "Hello, World!" message logged by the JavaScript file.
 5. Click the button (if any) to see the alert message "Hello, World!".
 
