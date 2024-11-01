@@ -1,9 +1,5 @@
 console.log("Hello, World!");
 
-function showAlert() {
-    alert("Hello, World!");
-}
-
 // Functionality for the navigation menu
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll("nav ul li a");
@@ -201,4 +197,3 @@ function updateNavigationMenu() {
 
 document.getElementById('add-pages-btn').addEventListener('click', addPages);
 document.getElementById('delete-pages-btn').addEventListener('click', deletePages);
-
