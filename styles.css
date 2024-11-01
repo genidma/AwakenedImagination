@@ -181,11 +181,11 @@ footer {
 /* Add styles for the reddish brown brick wall */
 #brick-wall {
     position: absolute;
-    top: 5in;
+    top: 7in;
     right: 0.5in;
     width: 2in;
     height: 2in;
-    background-color: #8B4513;
+    background-color: #B22222;
     border: 1px solid #5A2D0C;
 }
 
