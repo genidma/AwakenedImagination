@@ -33,17 +33,17 @@
     </footer>
 
     <script>
-        const tasks = {
+        const projects = {
             data: [
-                {id: 1, text: "Task 1", start_date: "01-01-2025", duration: 15},
-                {id: 2, text: "Task 2", start_date: "15-01-2025", duration: 17},
-                {id: 3, text: "Task 3", start_date: "15-02-2025", duration: 28},
-                {id: 4, text: "Task 4", start_date: "01-04-2025", duration: 30}
+                {id: 1, text: "Project 1", start_date: "01-01-2025", duration: 15},
+                {id: 2, text: "Project 2", start_date: "15-01-2025", duration: 17},
+                {id: 3, text: "Project 3", start_date: "15-02-2025", duration: 28},
+                {id: 4, text: "Project 4", start_date: "01-04-2025", duration: 30}
             ]
         };
 
         gantt.init("gantt_here");
-        gantt.parse(tasks);
+        gantt.parse(projects);
 
         function promptPassword() {
             const password = prompt("Enter password to modify Gantt chart:");
