@@ -22,7 +22,7 @@ function createSun() {
     const moveDownInches = 30 / 25.4; // convert mm to inches
     const newTopInches = currentTopInches + moveDownInches;
     
-    sun.style.top = newTopInches + 'in'; // Set the new top position
+    sun.style.top = '4.7in'; // Set the new top position
     sun.style.right = '0.5in';
     sun.style.width = '1in';
     sun.style.height = '1in';
