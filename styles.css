@@ -184,7 +184,7 @@ footer {
     right: 0.8in; /* Updated to position closer to the sun */
     width: 2in;
     height: 1.5in;
-    background-color: #874848;
+    background-color: rgba(178, 34, 34, 0.5); /* Updated for transparency */
     border: 1px solid #d36516;
     background-image: linear-gradient(45deg, #B22222 25%, transparent 25%, transparent 50%, #B22222 50%, #B22222 75%, transparent 75%, transparent);
     background-size: 20px 20px;

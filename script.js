@@ -79,7 +79,7 @@ function createBrickWall() {
     wall.style.height = '1.5in';
     wall.style.backgroundColor = '#8B4513';
     wall.style.border = '1px solid #5A2D0C';
-    wall.style.zIndex = '1'; // Ensure the wall is behind the sun
+    wall.style.zIndex = '-1'; // Ensure the wall is behind the sun
 }
 
 createBrickWall();
