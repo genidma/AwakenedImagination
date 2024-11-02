@@ -17,6 +17,11 @@ p {
     color: #333;
 }
 
+ul, li, p {
+    font-size: 1em; /* Adjust as needed */
+    line-height: 1.5;
+}
+
 section {
     margin: 20px 0;
     padding: 10px;
@@ -31,16 +36,7 @@ h2 {
     text-shadow: 1px 1px #ffcc00;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-li {
-    margin: 5px 0; /* Example margin */
-    font-size: 1.2em;
-    color: #333;
-}
 
 strong {
     color: #ff0066;
