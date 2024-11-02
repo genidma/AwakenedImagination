@@ -198,17 +198,6 @@ footer {
     height: 800px;
 }
 
-/* Add styles for the puppy image */
-#puppy {
-    position: absolute;
-    top: 6in;
-    right: 0.5in;
-    width: 2in;
-    height: 2in;
-    background: url('https://example.com/puppy.png') no-repeat center center;
-    background-size: contain;
-}
-
 /* Navigation menu styles */
 nav ul {
     list-style-type: none;
