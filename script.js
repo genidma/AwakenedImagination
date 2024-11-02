@@ -12,10 +12,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Programmatically calculate the new top position by directly adding 30 mm to the existing position, you can do this:
 function createSun() {
     const sun = document.getElementById('sun');
     sun.style.position = 'absolute';
-    sun.style.top = '4.6811in';
+    
+    // Convert 30 mm to inches and calculate the new top position
+    const currentTopInches = 3.5; // in inches
+    const moveDownInches = 30 / 25.4; // convert mm to inches
+    const newTopInches = currentTopInches + moveDownInches;
+    
+    sun.style.top = newTopInches + 'in'; // Set the new top position
     sun.style.right = '0.5in';
     sun.style.width = '1in';
     sun.style.height = '1in';
@@ -24,6 +31,7 @@ function createSun() {
     sun.style.boxShadow = '0 0 20px yellow';
 }
 
+// Call the function to create the sun
 createSun();
 
 function makeSunWobble() {
