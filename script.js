@@ -48,11 +48,11 @@ makeSunWobble();
 const projects = {
     data: [
         {id: 1, text: "Project 01", start_date: "01-01-2025", duration: 45},
-        {id: 2, text: "Project 02", start_date: "15-02-2025", duration: 45},
-        {id: 3, text: "Project 03", start_date: "01-04-2025", duration: 45},
-        {id: 4, text: "Project 04", start_date: "15-05-2025", duration: 45},
-        {id: 5, text: "Project 05", start_date: "01-07-2025", duration: 45},
-        {id: 6, text: "Project 06", start_date: "15-08-2025", duration: 45}
+        {id: 2, text: "15-02-2025", duration: 45},
+        {id: 3, text: "01-04-2025", duration: 45},
+        {id: 4, text: "15-05-2025", duration: 45},
+        {id: 5, text: "01-07-2025", duration: 45},
+        {id: 6, text: "15-08-2025", duration: 45}
     ]
 };
 
@@ -73,7 +73,7 @@ document.getElementById("gantt_here").addEventListener("dblclick", promptPasswor
 function createBrickWall() {
     const wall = document.getElementById('brick-wall');
     wall.style.position = 'absolute';
-    wall.style.top = '1930px';
+    wall.style.top = 'calc(4.7in + 1930px)';
     wall.style.left = 'calc(3.5in - 10mm)';
     wall.style.width = '1in';
     wall.style.height = '0.75in';
