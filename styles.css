@@ -181,7 +181,7 @@ footer {
 #brick-wall {
     position: absolute;
     top: calc(4.7in + 1930px);
-    left: calc(3.5in - 10mm);
+    right: calc(0.5in + 12mm);
     width: 1in;
     height: 0.75in;
     background-color: #8B4513;
