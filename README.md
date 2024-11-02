@@ -1,11 +1,7 @@
 ## AwakenedImagination
-# AwakeSpaceIndustries-Test and Universal Healthcare Website Project
-
-This project is a simple website that includes basic HTML, CSS, and JavaScript files. The content from both AwakeSpaceIndustries-Test (ASI) and Awake Universal Healthcare (AUH) has been synthesized into a single page.
-
 # Awakened Imagination Group of Projects
 
-This project is a simple website that includes basic HTML, CSS, and JavaScript files. Historically, there have been two projects via the Awake Space Industries Project (Not incorporated as of October of 2024) and Awake Universal Healthcare (Same). These projects are being consolidated as of 11-01-2024. 
+This project is a simple website that includes basic HTML, CSS, and JavaScript files. This is a testing ground for taking excerpts of the code, which I will be placing on the urls below. Historically, there have been two projects: 1. Awake Space Industries Project (Not incorporated as of October of 2024) and 2. Awake Universal Healthcare (Same). These projects are being consolidated as of 11-01-2024.  My goal is to synthesize the projects in a singular container and initiate a 'public benefitting corporation.' So that the work is undertaken in order to help improve the condition for the future of life. (Now and in the indefinite future)
 
 As of 11-01-2024 (November the 1st) the public facing websites will remain at the following locations
 - https://asi.surge.sh/
