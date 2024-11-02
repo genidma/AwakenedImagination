@@ -244,3 +244,9 @@ nav ul li a:hover {
     bottom: 0;
     left: 25%;
 }
+
+/* Add styles for images to fit within the screen width */
+img {
+    max-width: 100%;
+    height: auto;
+}
