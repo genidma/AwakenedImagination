@@ -22,7 +22,7 @@ function createSun() {
     const moveDownInches = 30 / 25.4; // convert mm to inches
     const newTopInches = currentTopInches + moveDownInches;
     
-    sun.style.top = '4.7in'; // Set the new top position
+    sun.style.top = newTopInches + 'in'; // Set the new top position
     sun.style.right = '0.5in';
     sun.style.width = '1in';
     sun.style.height = '1in';
@@ -48,11 +48,11 @@ makeSunWobble();
 const projects = {
     data: [
         {id: 1, text: "Project 01", start_date: "01-01-2025", duration: 45},
-        {id: 2, text: "15-02-2025", duration: 45},
-        {id: 3, text: "01-04-2025", duration: 45},
-        {id: 4, text: "15-05-2025", duration: 45},
-        {id: 5, text: "01-07-2025", duration: 45},
-        {id: 6, text: "15-08-2025", duration: 45}
+        {id: 2, text: "Project 02", start_date: "15-02-2025", duration: 45},
+        {id: 3, text: "Project 03", start_date: "01-04-2025", duration: 45},
+        {id: 4, text: "Project 04", start_date: "15-05-2025", duration: 45},
+        {id: 5, text: "Project 05", start_date: "01-07-2025", duration: 45},
+        {id: 6, text: "Project 06", start_date: "15-08-2025", duration: 45}
     ]
 };
 
@@ -73,10 +73,10 @@ document.getElementById("gantt_here").addEventListener("dblclick", promptPasswor
 function createBrickWall() {
     const wall = document.getElementById('brick-wall');
     wall.style.position = 'absolute';
-    wall.style.top = 'calc(4.7in + 1930px)';
-    wall.style.right = 'calc(0.5in + 12mm)';
-    wall.style.width = '1in';
-    wall.style.height = '0.75in';
+    wall.style.top = '3.5in';
+    wall.style.right = '0.5in';
+    wall.style.width = '2in';
+    wall.style.height = '1.5in';
     wall.style.backgroundColor = '#8B4513';
     wall.style.border = '1px solid #5A2D0C';
     wall.style.zIndex = '1'; // Ensure the wall is behind the sun
