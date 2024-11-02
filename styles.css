@@ -37,7 +37,7 @@ ul {
 }
 
 li {
-    margin: px 0;
+    margin: 5px 0; /* Example margin */
     font-size: 1.2em;
     color: #333;
 }
@@ -265,6 +265,7 @@ img {
     margin: 0 auto; /* Center the container itself */
     overflow: hidden; /* Prevent overflow */
 }
+
 
 .responsive-img {
     max-width: 100%; /* Ensures the image does not exceed the container's width */
