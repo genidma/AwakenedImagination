@@ -18,7 +18,7 @@ function createSun() {
     sun.style.position = 'absolute';
     
     // Convert 30 mm to inches and calculate the new top position
-    const currentTopInches = 3.5; // in inches
+    const currentTopInches = 4.7; // in inches
     const moveDownInches = 30 / 25.4; // convert mm to inches
     const newTopInches = currentTopInches + moveDownInches;
     
