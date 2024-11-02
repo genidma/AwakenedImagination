@@ -73,10 +73,10 @@ document.getElementById("gantt_here").addEventListener("dblclick", promptPasswor
 function createBrickWall() {
     const wall = document.getElementById('brick-wall');
     wall.style.position = 'absolute';
-    wall.style.top = '7in';
+    wall.style.top = '1930px';
     wall.style.left = 'calc(3.5in - 10mm)';
-    wall.style.width = '2in';
-    wall.style.height = '1.5in';
+    wall.style.width = '1in';
+    wall.style.height = '0.75in';
     wall.style.backgroundColor = '#8B4513';
     wall.style.border = '1px solid #5A2D0C';
     wall.style.zIndex = '1'; // Ensure the wall is behind the sun
