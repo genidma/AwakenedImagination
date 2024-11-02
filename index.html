@@ -116,7 +116,7 @@
 
     <div id="sun" style="position: absolute; top: 4.7in; right: 0.5in; width: 1in; height: 1in; background-color: yellow; border-radius: 50%; box-shadow: 0 0 20px yellow;"></div>
 
-    <div id="brick-wall" style="position: absolute; top: 7in; right: 0.5in; width: 2in; height: 1.5in; background-color: #B22222; border: 1px solid #5A2D0C;"></div>
+    <div id="brick-wall" style="position: absolute; top: 7in; left: calc(3.5in - 10mm); width: 2in; height: 1.5in; background-color: #B22222; border: 1px solid #5A2D0C;"></div>
 
     <div id="puppy" style="position: absolute; top: 6in; right: 0.5in; width: 2in; height: 2in; background: url('https://example.com/puppy.png') no-repeat center center; background-size: contain;"></div>
 
@@ -149,6 +149,19 @@
         }
 
         makeSunWobble();
+
+        function createBrickWall() {
+            const wall = document.getElementById('brick-wall');
+            wall.style.position = 'absolute';
+            wall.style.top = '7in';
+            wall.style.left = 'calc(3.5in - 10mm)';
+            wall.style.width = '2in';
+            wall.style.height = '1.5in';
+            wall.style.backgroundColor = '#B22222';
+            wall.style.border = '1px solid #5A2D0C';
+        }
+
+        createBrickWall();
     </script>
 
 </body>

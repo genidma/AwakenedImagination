@@ -73,8 +73,8 @@ document.getElementById("gantt_here").addEventListener("dblclick", promptPasswor
 function createBrickWall() {
     const wall = document.getElementById('brick-wall');
     wall.style.position = 'absolute';
-    wall.style.top = '5in';
-    wall.style.right = '0.5in';
+    wall.style.top = '7in';
+    wall.style.left = 'calc(3.5in - 10mm)';
     wall.style.width = '2in';
     wall.style.height = '1.5in';
     wall.style.backgroundColor = '#8B4513';
