@@ -34,7 +34,7 @@ ul {
 }
 
 li {
-    margin: 10px 0;
+    margin: px 0;
     font-size: 1.2em;
     color: #333;
 }
@@ -247,6 +247,12 @@ nav ul li a:hover {
 
 /* Add styles for images to fit within the screen width */
 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add styles for the responsive-img class */
+.responsive-img {
     max-width: 100%;
     height: auto;
 }
